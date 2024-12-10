@@ -18,7 +18,6 @@ const limiter = rateLimit({
 const router = express.Router();
 
 //routes
-
 /**
  * @swagger
  * components:
@@ -68,6 +67,7 @@ const router = express.Router();
 
 //RAGISTER || POST
 router.post("/register", limiter, ragisterController);
+
 /**
  * @swagger
  * /api/v1/auth/register:
@@ -93,6 +93,7 @@ router.post("/register", limiter, ragisterController);
 
 // //LOGIN || POST
 router.post("/login", limiter, loginController);
+
 /**
  * @swagger
  * /api/v1/auth/login:

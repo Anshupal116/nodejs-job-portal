@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "node serevr.js",
-    "server": "nodemon serevr.js"
+    "server": "nodemon serevr.js",
+    "client": "npm start --prefix ./client ",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "aNshupAl",
   "license": "ISC",
